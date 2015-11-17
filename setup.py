@@ -3,10 +3,11 @@ import sys, os
 
 version = '0.0'
 
-setup(name='txwebp',
+setup(name='tpic-webp',
       version=version,
-      description="WebP to JPEG reverse proxy for Tencent",
+      description="Webp to JPEG reverse proxy",
       long_description="""\
+              Convert webp to jpeg for backward compatibility of some QQ clients against q*.tpic.cn
 """,
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='',
@@ -24,7 +25,7 @@ setup(name='txwebp',
       ],
       entry_points={
           'console_scripts': [
-              'txwebp = txwebp.__main__:main',
+              'tpicwebpd = tpicwebp.__main__:main',
           ]
       }
 )
