@@ -24,7 +24,7 @@ setup(name='txwebp',
       ],
       entry_points={
           'console_scripts': [
-              'txwebp = txwebp.__main__.main',
+              'txwebp = txwebp.__main__:main',
           ]
       }
 )
