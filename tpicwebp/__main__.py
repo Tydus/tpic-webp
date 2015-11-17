@@ -26,12 +26,10 @@ class MainHandler(tornado.web.RequestHandler):
             s = res.buffer
             self.set_header("Content-Type", res.headers["Content-Type"])
 
-
         self.write(s.getvalue())
 
-
 def main(argv=None):
-    if not args:
+    if not argv:
         argv = sys.argv[1:]
 
     if len(argv) != 1:
